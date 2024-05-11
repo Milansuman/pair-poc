@@ -29,6 +29,8 @@ if __name__ == "__main__":
             print(score)
             if score > 0.5:
                 print(prompt)
+                with open("end.txt", "w") as file:
+                    file.write(prompt)
                 break
             
             history.append(("ai", response))

@@ -10,7 +10,7 @@ load_dotenv()
 TOGETHER_API_KEY = os.environ.get("TOGETHER_API_KEY")
 
 llm = Ollama(
-    model="wizard-vicuna-uncensored"
+    model="llama3"
 )
 
 def judge_response(prompt, response):
