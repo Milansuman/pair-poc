@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 llm = Ollama(
-    model="llama3"
+    model="wizard-vicuna-uncensored"
 )
 
 def generate_improvement(previous_prompt, response):
