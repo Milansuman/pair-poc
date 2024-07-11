@@ -1,13 +1,7 @@
 from langchain_community.llms.ollama import Ollama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from dotenv import load_dotenv
-import os
 import re
-
-load_dotenv()
-
-TOGETHER_API_KEY = os.environ.get("TOGETHER_API_KEY")
 
 llm = Ollama(
     model="llama3"
